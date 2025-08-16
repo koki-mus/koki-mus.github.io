@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // 質問を初期状態に戻す
         questions.forEach((q, index) => {
-            if (index === 0) {
+            if (index === 0) {  
                 q.classList.remove('hidden');
             } else {
                 q.classList.add('hidden');
