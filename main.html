@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おもしろ診断メーカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>おもしろ診断メーカー</h1>
+        
+        <div id="quiz-container">
+            <div class="question" id="q1">
+                <p>Q1. あなたが好きな動物は？</p>
+                <button class="answer-btn" data-point="A">犬</button>
+                <button class="answer-btn" data-point="B">猫</button>
+                <button class="answer-btn" data-point="C">鳥</button>
+            </div>
+            
+            <div class="question hidden" id="q2">
+                <p>Q2. 好きな季節は？</p>
+                <button class="answer-btn" data-point="D">春</button>
+                <button class="answer-btn" data-point="E">夏</button>
+                <button class="answer-btn" data-point="F">秋</button>
+                <button class="answer-btn" data-point="G">冬</button>
+            </div>
+            
+            <div class="question hidden" id="q3">
+                <p>Q3. 好きな食べ物は？</p>
+                <button class="answer-btn" data-point="H">お肉</button>
+                <button class="answer-btn" data-point="I">お魚</button>
+                <button class="answer-btn" data-point="J">野菜</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2>診断結果</h2>
+            <p id="result-text"></p>
+            <button id="reset-btn">もう一度診断する</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
